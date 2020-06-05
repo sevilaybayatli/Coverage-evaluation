@@ -1,0 +1,5 @@
+===========================Evaluation==================================
+
+perl mteval_by_bootstrap_resampling.pl -source src.txt -test beamResults.txt -ref new-apertium-pedited.txt -times 2 -eval /home/sevilay/apertium-eval-translator/tmp/wer.sh
+
+sevilay@sevilay-linux:~/apertium-eval-translator$ perl apertium-eval-translator-line.pl -test apertium.txt -ref apertium.posted.txt

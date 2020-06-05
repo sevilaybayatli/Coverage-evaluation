@@ -1,0 +1,19 @@
+=======================Coverage=====================================
+There are two options to calculate the coverage:
+First: https://github.com/apertium/apertium-quality.git
+       aq-covtest gag.corpus.txt /path/to/gag.automorf.bin
+Second:
+    We can calculate it by dividing the number of words that don't have a '*' symbol by the total number of words.
+    this gives number of words:
+      cat /media/sevilay/Maşa/uzb.txt|apertium-destxt| lt-proc uzb.automorf.bin| apertium-retxt | tr ' ' '\n'|wc -l
+         9720372
+    this gives number of words with *
+      cat /media/sevilay/Maşa/uzb.txt|apertium-destxt| lt-proc uzb.automorf.bin| apertium-retxt | tr ' ' '\n'|grep -v '\*'|wc -l
+          8357628
+ coverage = words without * / total number of words
+          = 8357628/9720372 
+          = 85.98
+
+
+      
+   
