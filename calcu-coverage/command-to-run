@@ -1,0 +1,4 @@
+$ [script].sh [corpus].txt analyser.[bin,hfst]
+./coverage-ltproc-new.sh [corpus].txt analyser.[bin,hfst]
+
+##also remember to install the apcalc package.
